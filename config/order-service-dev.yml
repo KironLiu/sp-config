@@ -21,9 +21,4 @@ eureka:
 feign:  hystrix:    enabled: true
 #暴漏监控端点
 management:  endpoints:    web:      exposure:        include:        - hystrix.stream      #设置只暴漏hystrix端点信息
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh
+        - refresh
